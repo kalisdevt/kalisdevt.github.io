@@ -1,4 +1,30 @@
+@import url('./reset.css');
 @import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800);
+
+@media screen and (max-width: 800px) {
+    .nav-navbar {
+        flex-direction: column;
+        gap: 5px !important;
+    }
+
+    .header-nav {
+        flex-direction: column;
+        align-items: start !important;
+        gap: 30px;
+    }
+
+    .hypertexts {
+        order: 2;
+    }
+
+    .table {
+        order: 1;
+    }
+
+    .forma {
+        order: 3;
+    }
+}
 
 body {
     font-family: 'Manrope', sans-serif;
@@ -15,8 +41,10 @@ header {
 }
 
 .container {
-    max-width: 1350px;
+    max-width: 960px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo {
