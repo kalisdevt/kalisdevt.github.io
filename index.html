@@ -104,7 +104,7 @@
 
             <div class="forma">
                 <h2 class="text-h2">Форма</h2>
-                <form>
+                <form action="/" method="GET">
                     <label for="">
                         ФИО
                         <input name="fio" type="text" >
@@ -122,12 +122,16 @@
                         <input name="date" type="date">
                     </label>
                     <label for="">
-                        Пол
-                        <input name="pol" type="radio">
+                        M
+                        <input name="pol_m" type="radio">
+                    </label>
+                    <label for="">
+                        Ж
+                        <input name="pol_z" type="radio">
                     </label>
                     <label for="">
                         Любимый язык программирования
-                        <select name="lang[]" id="lang" multiple>
+                        <select name="lang" id="lang" multiple>
                             <option value="pascal">Pascal</option>
                             <option value="c">C</option>
                             <option value="cpp">C++</option>
